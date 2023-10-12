@@ -1,0 +1,12 @@
+package simple_calculator;
+
+@SuppressWarnings("serial")
+public class DivisionByZeroException extends Exception {
+	public DivisionByZeroException() {
+		super("Cannot divide by zero.\nReenter, your last line: ");
+	}
+
+	public DivisionByZeroException(final String message) {
+		super(message);
+	}
+}
