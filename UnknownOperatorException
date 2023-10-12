@@ -1,0 +1,15 @@
+package simple_calculator;
+
+@SuppressWarnings("serial")
+public class UnknownOperatorException extends Exception {
+
+	public UnknownOperatorException() {
+		super(" is an unknown operator.\nReenter, your last line: ");
+	}
+	
+	public UnknownOperatorException(final String message) {
+        super(message);
+    }
+
+}
+
